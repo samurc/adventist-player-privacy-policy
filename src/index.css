@@ -84,6 +84,23 @@
   /* ==========================================================================
      #COMPONENTS
      ========================================================================== */
+  .c-panoramic {
+    width: 100%;
+    margin-top: var(--spacing-xl);
+    margin-bottom: calc(var(--spacing-xl) * -0.5); /* overlap header padding slightly or just spacing */
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .c-panoramic__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 250px;
+  }
+
   .c-header {
     padding: var(--spacing-xl) 0 var(--spacing-lg);
     text-align: center;

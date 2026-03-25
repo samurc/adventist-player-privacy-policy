@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import panoramicImg from './assets/panoramic.png';
 
 const policyData = {
   header: {
@@ -83,7 +84,7 @@ const policyData = {
       title: "8. Contacto",
       content: [
         "Si tienes preguntas sobre esta política, puedes contactarnos en:",
-        "Correo electrónico: [Tu correo de desarrollador aquí]"
+        "Correo electrónico: samuel.cusi@upeu.edu.pe"
       ]
     }
   ]
@@ -92,9 +93,11 @@ const policyData = {
 export default function App() {
   return (
     <div className="o-container">
+      <div className="c-panoramic">
+        <img src={panoramicImg} alt="Vista panorámica" className="c-panoramic__image" />
+      </div>
       <header className="c-header">
         <h1 className="c-header__title">{policyData.header.title}</h1>
-        <p className="c-header__subtitle">{policyData.header.subtitle}</p>
       </header>
 
       <main className="o-layout">
